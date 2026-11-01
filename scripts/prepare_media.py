@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Create web-ready, Git-friendly copies of the HITMEN demonstration videos.
 
-The source videos remain untouched.  This script writes muted H.264/MP4 assets
-to assets/videos, JPEG posters to assets/posters, a visual contact sheet, and a
-machine-readable manifest.  It needs an ffmpeg binary on PATH, or pass one with
---ffmpeg (imageio-ffmpeg is a convenient user-local provider).
+The source videos remain untouched. This script writes H.264/MP4 assets to
+assets/videos, JPEG posters to assets/posters, a visual contact sheet, and a
+machine-readable manifest. Short demonstrations are muted; the full overview
+retains its original audio. Pass an ffmpeg binary with --ffmpeg
+(imageio-ffmpeg is a convenient user-local provider).
 """
 from __future__ import annotations
 
@@ -19,6 +20,8 @@ import cv2
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = {
+    # A long-form, user-initiated research walkthrough. Its narrated AAC track is kept.
+    "overview": "videos/HITMEN.mp4",
     "hero": "videos/HITMEN_Homepage_Main.mp4",
     "hand-confidence": "videos/handOcclusion.mp4",
     "hand-recovery": "videos/hand_Occlusion_sim.mp4",
@@ -115,15 +118,24 @@ def main() -> None:
         crf, maxrate = (20, "12M") if is_hero else (21, "7M")
         vf = f"scale='min({max_width},iw)':-2:flags=lanczos"
         if args.overwrite or not output.exists():
-            subprocess.run([
-                ffmpeg, "-y", "-i", str(source), "-map", "0:v:0", "-an",
-                "-vf", vf, "-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
-                "-maxrate", maxrate, "-bufsize", str(int(maxrate[:-1]) * 2) + "M",
-                "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(output),
-            ], check=True)
+            if name == "overview":
+                # The source already is small H.264/AAC. Remux rather than re-encode so
+                # the narrated explanatory film retains its original picture and sound.
+                subprocess.run([
+                    ffmpeg, "-y", "-i", str(source), "-map", "0", "-c", "copy",
+                    "-movflags", "+faststart", str(output),
+                ], check=True)
+            else:
+                subprocess.run([
+                    ffmpeg, "-y", "-i", str(source), "-map", "0:v:0", "-an",
+                    "-vf", vf, "-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
+                    "-maxrate", maxrate, "-bufsize", str(int(maxrate[:-1]) * 2) + "M",
+                    "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(output),
+                ], check=True)
         if args.overwrite or not poster.exists():
             # A fifth into each clip is generally past slates and setup motion.
-            still(source, poster, max(0.0, source_info["duration_seconds"] * 0.20))
+            poster_time = 65.0 if name == "overview" else source_info["duration_seconds"] * 0.20
+            still(source, poster, max(0.0, poster_time))
         output_info = probe(output)
         manifest[name] = {
             "source": relative_source,

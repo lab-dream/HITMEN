@@ -93,8 +93,8 @@ const playObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('video').forEach(video => {
-  video.defaultMuted = true;
-  video.muted = true;
+  video.defaultMuted = video.hasAttribute('muted');
+  video.muted = video.defaultMuted;
   loadObserver.observe(video);
   playObserver.observe(video);
   video.addEventListener('pointerdown', () => loadVideo(video), { passive: true });

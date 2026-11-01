@@ -1,4 +1,23 @@
 {
+  "overview": {
+    "source": "videos/HITMEN.mp4",
+    "video": "assets/videos/overview.mp4",
+    "poster": "assets/posters/overview.jpg",
+    "source_info": {
+      "duration_seconds": 178.38,
+      "size_bytes": 18166632,
+      "width": 1920,
+      "height": 1080,
+      "fps": 29.97
+    },
+    "output_info": {
+      "duration_seconds": 178.38,
+      "size_bytes": 18255933,
+      "width": 1920,
+      "height": 1080,
+      "fps": 29.97
+    }
+  },
   "hero": {
     "source": "videos/HITMEN_Homepage_Main.mp4",
     "video": "assets/videos/hero.mp4",

@@ -34,7 +34,12 @@
       <div class="authors"><span>Chanwoo Seon</span><span>Dongwoo Son</span><span>Junho An</span><span>Jinwoo Lee</span><span>Youngsang Hwang</span><span>Gahyun Oh</span><span>Suhan Park<sup>*</sup></span></div>
       <p class="affiliation">Department of Robotics, Kwangwoon University <span class="affiliation-divider">/</span> Seoul, Republic of Korea</p>
       <p class="corresponding">* Corresponding author</p>
-      <div class="hero-links"><a class="button primary" href="#film"><span aria-hidden="true">▶</span> Watch HITMEN</a><a class="text-link" href="#overview">Explore the system <span aria-hidden="true">↓</span></a></div>
+      <!-- Replace each disabled button with a link when its resource is public. -->
+      <div class="hero-links" role="group" aria-label="Research resources, coming soon">
+        <button class="resource-button" type="button" disabled aria-label="GitHub code, coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.2-4-2-6-2m12 5v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6A4.7 4.7 0 0 0 18.4 7a4.3 4.3 0 0 0-.1-3.3s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.3 3.4 5.3 3.7 5.3 3.7A4.3 4.3 0 0 0 5.2 7a4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6A3 3 0 0 0 8.6 19v3"/></svg><span>GitHub</span><small>Soon</small></button>
+        <button class="resource-button" type="button" disabled aria-label="arXiv paper, coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h6"/></svg><span>arXiv · Paper</span><small>Soon</small></button>
+        <button class="resource-button" type="button" disabled aria-label="Video link, coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg><span>Video</span><small>Soon</small></button>
+      </div>
       <figure class="hero-film" id="film">
         <div class="video-shell">
           <video id="hero-video" class="demo-video" src="assets/videos/hero.mp4" poster="assets/posters/hero.jpg" muted loop playsinline controls preload="metadata" aria-label="HITMEN main film showing the wearable interface and humanoid teleoperation" data-autoplay></video>
@@ -51,6 +56,10 @@
         <article><div class="modality-top"><span class="mono">03</span><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="12" r="5"/><circle cx="29" cy="29" r="5"/><path d="m17 16 9 9m-16-9 14 17m9-7 9-8m-9 14 12-10M9 8H4v13h6"/></svg></div><h3>Reach directly.</h3><p class="modality-label">ARMS → LEADER ARMS</p><p>Shoulder-mounted leader arms map your joint motion directly to the robot’s arms.</p></article>
         <article><div class="modality-top"><span class="mono">04</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 27V15a3 3 0 0 1 6 0v10-16a3 3 0 0 1 6 0v16-14a3 3 0 0 1 6 0v14-9a3 3 0 0 1 6 0v16l-6 10H18L7 29a3 3 0 0 1 5-2z"/></svg></div><h3>Keep your touch.</h3><p class="modality-label">HANDS → VR + RGB CAMERAS</p><p>Palm-facing wrist cameras keep fingers in view when headset hand tracking struggles.</p></article>
       </div>
+      <figure class="overview-film" id="overview-film" aria-labelledby="overview-film-title">
+        <figcaption class="overview-film-heading"><div><p class="eyebrow">FULL SYSTEM VIDEO</p><h3 id="overview-film-title">A closer look at HITMEN</h3><p class="overview-film-description">Explore the interface and see the full system in action.</p></div><span class="film-duration mono">02:58</span></figcaption>
+        <div class="video-shell"><video id="overview-video" class="demo-video" data-src="assets/videos/overview.mp4" poster="assets/posters/overview.jpg" playsinline controls preload="none" aria-label="Full HITMEN research overview film, 2 minutes 58 seconds"></video></div>
+      </figure>
     </section>
 
     <section class="reliability section-space" id="reliability" aria-labelledby="reliability-title">
