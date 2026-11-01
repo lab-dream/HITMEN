@@ -264,7 +264,7 @@ sup {
 
 .hero-links {
   display:flex;
-  align-items:center;
+  align-items:stretch;
   justify-content:center;
   gap:10px;
   margin:24px 0 39px;
@@ -287,6 +287,11 @@ sup {
 .resource-button:disabled {
   opacity:1;
   cursor:default;
+}
+
+a.resource-button:hover {
+  background:var(--red);
+  border-color:var(--red);
 }
 
 .resource-button svg {

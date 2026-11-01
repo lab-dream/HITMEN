@@ -40,7 +40,7 @@ python3 -m http.server 8000
 
 본문은 영문 TeX 원고와 제공된 설명에 근거합니다. 수식 대신 영상과 간단한 설명을 중심으로 구성했습니다. 논문에서 평가한 전체 7개 작업 중 영상이 제공된 4개를 `selected manipulation tasks`로 소개하며, 제공되지 않은 논문 PDF·공개 코드 링크나 결과 수치는 추가하지 않았습니다.
 
-상단의 `GitHub`, `arXiv · Paper`, `Video` 버튼은 현재 `Soon`으로 표시된 비활성 버튼입니다. 공개 주소가 준비되면 `index.html`의 해당 `button`을 같은 `resource-button` 클래스를 사용하는 `a href="실제 주소"`로 바꾸고, `disabled` 속성과 `Soon` 배지를 제거하면 됩니다. `aria-label`도 실제 링크 설명에 맞게 수정합니다.
+상단의 `Video` 버튼을 누르면 페이지 안의 전체 설명 영상으로 스크롤 이동합니다. `GitHub`, `arXiv · Paper` 버튼은 현재 `Soon`으로 표시된 비활성 버튼입니다. 공개 주소가 준비되면 `index.html`의 해당 `button`을 같은 `resource-button` 클래스를 사용하는 `a href="실제 주소"`로 바꾸고, `disabled` 속성과 `Soon` 배지를 제거하면 됩니다. `aria-label`도 실제 링크 설명에 맞게 수정합니다.
 
 ## 영상 동작
 
