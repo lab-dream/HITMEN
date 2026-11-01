@@ -1,0 +1,12 @@
+# Original research material stays local. Only web derivatives are published.
+/videos/
+/Experiments_short/
+/*.zip
+/*.tex
+/*.pdf
+/.venv/
+/.tools/
+/tmp/
+/qa/
+__pycache__/
+.DS_Store

@@ -1,0 +1,363 @@
+{
+  "hero": {
+    "source": "videos/HITMEN_Homepage_Main.mp4",
+    "video": "assets/videos/hero.mp4",
+    "poster": "assets/posters/hero.jpg",
+    "source_info": {
+      "duration_seconds": 56.53,
+      "size_bytes": 132928996,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 56.53,
+      "size_bytes": 26289621,
+      "width": 1600,
+      "height": 900,
+      "fps": 30.0
+    }
+  },
+  "hand-confidence": {
+    "source": "videos/handOcclusion.mp4",
+    "video": "assets/videos/hand-confidence.mp4",
+    "poster": "assets/posters/hand-confidence.jpg",
+    "source_info": {
+      "duration_seconds": 47.37,
+      "size_bytes": 72600243,
+      "width": 1440,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 47.37,
+      "size_bytes": 7181342,
+      "width": 1280,
+      "height": 960,
+      "fps": 30.0
+    }
+  },
+  "hand-recovery": {
+    "source": "videos/hand_Occlusion_sim.mp4",
+    "video": "assets/videos/hand-recovery.mp4",
+    "poster": "assets/posters/hand-recovery.jpg",
+    "source_info": {
+      "duration_seconds": 46.63,
+      "size_bytes": 85370795,
+      "width": 1440,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 46.63,
+      "size_bytes": 9525005,
+      "width": 1280,
+      "height": 960,
+      "fps": 30.0
+    }
+  },
+  "torso-horizontal": {
+    "source": "videos/waist_neck_horizon.mp4",
+    "video": "assets/videos/torso-horizontal.mp4",
+    "poster": "assets/posters/torso-horizontal.jpg",
+    "source_info": {
+      "duration_seconds": 9.93,
+      "size_bytes": 25495996,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 9.93,
+      "size_bytes": 3331099,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "torso-vertical": {
+    "source": "videos/waist_neck_vertical.mp4",
+    "video": "assets/videos/torso-vertical.mp4",
+    "poster": "assets/posters/torso-vertical.jpg",
+    "source_info": {
+      "duration_seconds": 8.83,
+      "size_bytes": 22736134,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 8.83,
+      "size_bytes": 2570185,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "peg-in-hole": {
+    "source": "videos/peginhole_sim.mp4",
+    "video": "assets/videos/peg-in-hole.mp4",
+    "poster": "assets/posters/peg-in-hole.jpg",
+    "source_info": {
+      "duration_seconds": 9.47,
+      "size_bytes": 24520194,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 9.47,
+      "size_bytes": 1630149,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "out-of-range": {
+    "source": "videos/out_of_range.mp4",
+    "video": "assets/videos/out-of-range.mp4",
+    "poster": "assets/posters/out-of-range.jpg",
+    "source_info": {
+      "duration_seconds": 10.47,
+      "size_bytes": 27279987,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 10.47,
+      "size_bytes": 1252198,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "handover-vr": {
+    "source": "Experiments_short/ball_hand_over/VR_ball_hand_over.mp4",
+    "video": "assets/videos/handover-vr.mp4",
+    "poster": "assets/posters/handover-vr.jpg",
+    "source_info": {
+      "duration_seconds": 8.57,
+      "size_bytes": 22168305,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 8.57,
+      "size_bytes": 2472447,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "handover-leader": {
+    "source": "Experiments_short/ball_hand_over/HMD_leader_ball_hand_over.mp4",
+    "video": "assets/videos/handover-leader.mp4",
+    "poster": "assets/posters/handover-leader.jpg",
+    "source_info": {
+      "duration_seconds": 8.77,
+      "size_bytes": 22538428,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 8.77,
+      "size_bytes": 2374416,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "handover-hitmen": {
+    "source": "Experiments_short/ball_hand_over/HITMEN_ball_hand_over.mp4",
+    "video": "assets/videos/handover-hitmen.mp4",
+    "poster": "assets/posters/handover-hitmen.jpg",
+    "source_info": {
+      "duration_seconds": 7.8,
+      "size_bytes": 20006395,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 7.8,
+      "size_bytes": 1998145,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "extraction-vr": {
+    "source": "Experiments_short/take_out_ball/VR_take_out_ball.mp4",
+    "video": "assets/videos/extraction-vr.mp4",
+    "poster": "assets/posters/extraction-vr.jpg",
+    "source_info": {
+      "duration_seconds": 13.53,
+      "size_bytes": 34612112,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 13.53,
+      "size_bytes": 4111279,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "extraction-leader": {
+    "source": "Experiments_short/take_out_ball/HMD_leader_take_out_ball.mp4",
+    "video": "assets/videos/extraction-leader.mp4",
+    "poster": "assets/posters/extraction-leader.jpg",
+    "source_info": {
+      "duration_seconds": 13.93,
+      "size_bytes": 35536528,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 13.93,
+      "size_bytes": 4614399,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "extraction-hitmen": {
+    "source": "Experiments_short/take_out_ball/HITMEN_take_out_ball.mp4",
+    "video": "assets/videos/extraction-hitmen.mp4",
+    "poster": "assets/posters/extraction-hitmen.jpg",
+    "source_info": {
+      "duration_seconds": 16.37,
+      "size_bytes": 41836190,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 16.37,
+      "size_bytes": 5402167,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "racket-vr": {
+    "source": "Experiments_short/racket_ball/VR_racket ball.mp4",
+    "video": "assets/videos/racket-vr.mp4",
+    "poster": "assets/posters/racket-vr.jpg",
+    "source_info": {
+      "duration_seconds": 13.23,
+      "size_bytes": 33503724,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 13.23,
+      "size_bytes": 4122172,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "racket-leader": {
+    "source": "Experiments_short/racket_ball/hmd_leader_racket ball.mp4",
+    "video": "assets/videos/racket-leader.mp4",
+    "poster": "assets/posters/racket-leader.jpg",
+    "source_info": {
+      "duration_seconds": 12.7,
+      "size_bytes": 32125304,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 12.7,
+      "size_bytes": 3250668,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "racket-hitmen": {
+    "source": "Experiments_short/racket_ball/HITMEN_racket ball.mp4",
+    "video": "assets/videos/racket-hitmen.mp4",
+    "poster": "assets/posters/racket-hitmen.jpg",
+    "source_info": {
+      "duration_seconds": 6.67,
+      "size_bytes": 17008795,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 6.67,
+      "size_bytes": 2069516,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "bow-vr": {
+    "source": "Experiments_short/toy_bow/VR_toy_bow.mp4",
+    "video": "assets/videos/bow-vr.mp4",
+    "poster": "assets/posters/bow-vr.jpg",
+    "source_info": {
+      "duration_seconds": 7.27,
+      "size_bytes": 18241064,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 7.27,
+      "size_bytes": 2187052,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "bow-leader": {
+    "source": "Experiments_short/toy_bow/HMD_leader_toy_bow.mp4",
+    "video": "assets/videos/bow-leader.mp4",
+    "poster": "assets/posters/bow-leader.jpg",
+    "source_info": {
+      "duration_seconds": 19.1,
+      "size_bytes": 48504390,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 19.1,
+      "size_bytes": 5341869,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  },
+  "bow-hitmen": {
+    "source": "Experiments_short/toy_bow/HITMEN_toy_bow.mp4",
+    "video": "assets/videos/bow-hitmen.mp4",
+    "poster": "assets/posters/bow-hitmen.jpg",
+    "source_info": {
+      "duration_seconds": 15.7,
+      "size_bytes": 40606360,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0
+    },
+    "output_info": {
+      "duration_seconds": 15.7,
+      "size_bytes": 5443732,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0
+    }
+  }
+}
