@@ -227,7 +227,7 @@ sup {
 
 .research-title {
   font-family:var(--display);
-  font-size:clamp(19px,2.2vw,29px);
+  font-size:clamp(21px,2.4vw,32px);
   line-height:1.35;
   font-weight:500;
   letter-spacing:-.8px;
@@ -240,12 +240,25 @@ sup {
   column-gap:19px;
   row-gap:9px;
   margin-top:24px;
-  font-size:13px;
+  font-size:15px;
   font-weight:500;
 }
 
+.authors a {
+  white-space:nowrap;
+  text-decoration:underline;
+  text-decoration-color:#b9b8b0;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+
+.authors a:hover,.authors a:focus-visible {
+  color:var(--red);
+  text-decoration-color:var(--red);
+}
+
 .affiliation {
-  font-size:11px;
+  font-size:13px;
   line-height:1.6;
   margin-top:13px;
   color:var(--muted);
@@ -257,7 +270,7 @@ sup {
 }
 
 .corresponding {
-  font-size:10px;
+  font-size:11px;
   color:var(--muted);
   margin-top:4px;
 }
@@ -969,7 +982,7 @@ h2 {
     letter-spacing:-.08em;
   }
   .research-title {
-    font-size:20px;
+    font-size:22px;
     line-height:1.4;
     letter-spacing:-.7px;
     max-width:470px;
@@ -982,11 +995,11 @@ h2 {
     margin:22px auto 0;
     column-gap:15px;
     row-gap:8px;
-    font-size:11px;
+    font-size:13px;
     max-width:430px;
   }
   .affiliation {
-    font-size:10px;
+    font-size:11px;
     max-width:300px;
     margin:13px auto 0;
   }
@@ -994,7 +1007,7 @@ h2 {
     display:none;
   }
   .corresponding {
-    font-size:9px;
+    font-size:10px;
     margin-top:5px;
   }
   .hero-links {
