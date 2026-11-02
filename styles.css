@@ -125,6 +125,31 @@ sup {
   backdrop-filter:blur(12px);
 }
 
+.header-branding {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-shrink:0;
+}
+
+.lab-logo-link {
+  display:flex;
+  align-items:center;
+  min-height:32px;
+  padding-left:18px;
+  border-left:1px solid var(--line);
+}
+
+.lab-logo-link img {
+  display:block;
+  width:auto;
+  height:23px;
+}
+
+.lab-logo-link:hover {
+  opacity:.7;
+}
+
 .wordmark {
   display:inline-flex;
   gap:9px;
@@ -887,6 +912,15 @@ h2 {
 }
 
 @media(max-width:1000px) {
+  .header-branding {
+    gap:12px;
+  }
+  .lab-logo-link {
+    padding-left:12px;
+  }
+  .lab-logo-link img {
+    height:20px;
+  }
   .wrap {
     width:calc(100% - 56px);
   }
