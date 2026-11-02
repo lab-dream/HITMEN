@@ -142,8 +142,9 @@ sup {
 
 .lab-logo-link img {
   display:block;
-  width:auto;
-  height:23px;
+  width:106px;
+  max-width:106px;
+  height:auto;
 }
 
 .lab-logo-link:hover {
@@ -919,7 +920,8 @@ h2 {
     padding-left:12px;
   }
   .lab-logo-link img {
-    height:20px;
+    width:94px;
+    max-width:94px;
   }
   .wrap {
     width:calc(100% - 56px);
