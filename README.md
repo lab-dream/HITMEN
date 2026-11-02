@@ -2,8 +2,9 @@
 
 HITMEN 연구 소개용 정적 웹사이트입니다. HTML, CSS, JavaScript와 로컬 영상·폰트만 사용하며 별도의 서버, API 키, 유료 서비스 또는 빌드 과정이 필요하지 않습니다.
 
-- 공개 웹사이트: https://cwseon27.github.io/HITMEN/
-- 저장소: https://github.com/cwseon27/HITMEN
+- 공개 웹사이트: https://drl.kw.ac.kr/HITMEN/
+- GitHub Pages 주소: https://lab-dream.github.io/HITMEN/ (연구실 도메인으로 연결)
+- 저장소: https://github.com/lab-dream/HITMEN
 - 호스팅: GitHub Pages, `main` 브랜치의 루트(`/`)
 
 ## 로컬에서 확인
@@ -27,7 +28,7 @@ python3 -m http.server 8000
 | `assets/fonts/` | 자체 호스팅 폰트와 해당 OFL 라이선스 |
 | `scripts/prepare_media.py` | 원본에서 웹용 영상과 포스터를 다시 생성하는 도구 |
 
-수정 후 `git add` → `git commit` → `git push`하면 GitHub Pages가 갱신됩니다. 일반적인 문구·스타일 수정에는 패키지 설치나 영상 변환이 필요하지 않습니다.
+로컬 `origin`은 `lab-dream/HITMEN` 저장소를 가리킵니다. 수정 후 `git add` → `git commit` → `git push`하면 연구실 GitHub Pages가 갱신됩니다. 일반적인 문구·스타일 수정에는 패키지 설치나 영상 변환이 필요하지 않습니다.
 
 ## 페이지 구성
 
