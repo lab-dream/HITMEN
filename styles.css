@@ -839,6 +839,19 @@ h2 {
   aspect-ratio:16/9;
 }
 
+.acknowledgment {
+  padding-block:56px;
+  border-bottom:1px solid var(--line);
+}
+
+.acknowledgment p:last-child {
+  margin:14px 0 0;
+  max-width:880px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
 .site-footer {
   padding-block:49px 27px;
 }
